@@ -92,3 +92,41 @@
     <p id="output"></p>
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+  </style>
+  <script>
+    function createButton(name, link) {
+      var button = document.createElement("a");
+      button.className = "button";
+      button.innerHTML = name;
+      button.href = link;
+      return button;
+    }
+
+    function generateButtons() {
+      var container = document.getElementById("button-container");
+      for (var i = 1; i <= 20; i++) {
+        var button = createButton("Button " + i, "https://example.com");
+        container.appendChild(button);
+      }
+    }
+  </script>
+</head>
+<body onload="generateButtons()">
+  <div id="button-container"></div>
+</body>
+</html>
