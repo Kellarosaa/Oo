@@ -95,29 +95,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Button Example</title>
+    <title>Three Buttons</title>
     <style>
-        .button {
+        .button-container {
             position: fixed;
             bottom: 20px;
             right: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        
+        .button {
+            margin-left: 10px;
             padding: 10px 20px;
             background-color: #4CAF50;
             color: white;
-            border: none;
-            border-radius: 5px;
-            text-align: center;
             text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <a href="https://s1p1.onrender.com/service/https://now.gg/apps/roblox-corporation/5349/roblox.html" class="button">Roblox</a>
-    <a href="https://s1p1.onrender.com/service/https://now.gg/apps/innersloth-llc/4047/among-us.html" class="button">Among Us</a>
-    <a href="https://s1p1.onrender.com/service/https://now.gg/apps/epic-games/7308/fortnite.html" class="button">Fortnite</a>
+    <div class="button-container">
+        <a href="https://s1p1.onrender.com/service/https://now.gg/apps/roblox-corporation/5349/roblox.html
+
+
+">Roblox</a>
+        <a href="https://s1p1.onrender.com/service/https://now.gg/apps/innersloth-llc/4047/among-us.html
+" class="button">Among Us</a>
+        <a href="https://s1p1.onrender.com/service/https://now.gg/apps/epic-games/7308/fortnite.html
+" class="button">Fortnite</a>
+    </div>
 </body>
 </html>
