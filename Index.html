@@ -58,10 +58,10 @@
                 var searchInput = $("#searchInput").val();
                 var url;
 
-                if (searchInput.endsWith(".gg") || searchInput.startsWith("https")|| || searchInput.endsWith(".html") || searchInput.endsWith(".com") || searchInput.endsWith(".org") || searchInput.endsWith(".gov") || searchInput.endsWith(".ai") || searchInput.endsWith(".io")) {
+                if (searchInput.endsWith(".gg") || searchInput.endsWith(".html") || searchInput.endsWith(".com") || searchInput.endsWith(".org") || searchInput.endsWith(".gov") || searchInput.endsWith(".ai") || searchInput.endsWith(".io")) {
                     url = "https://s1p1.onrender.com/service/" + searchInput;
                 } else {
-                    url = "s1p1.onrender.com/service/https://" + searchInput;
+                    url = "http://google.com/search?q=" + searchInput;
                 }
 
                 $("#output").text(url);
